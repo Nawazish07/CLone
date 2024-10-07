@@ -1,19 +1,19 @@
 import React, { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import CatSprite from '../sprites/CatSprite';
+import DogSprite1 from '../sprites/DogSprite1';
 import DogSprite from '../sprites/DogSprite';
-import BirdSprite from '../sprites/BirdSprite';
+import DogSprite2 from '../sprites/DogSprite2';
 import { selectSprite } from '../redux/spritesSlice';
 import { SPRITE_HEIGHT, SPRITE_WIDTH } from '../constants/sprites';
 
 export const SpriteImage = ({ spriteName, styles, handleClick }) => {
     switch (spriteName) {
-        case "cat":
-            return <CatSprite styles={styles} onClick={handleClick} />
         case "dog":
             return <DogSprite styles={styles} onClick={handleClick} />
-        case "bird":
-            return <BirdSprite styles={styles} onClick={handleClick} />
+        case "dog1":
+            return <DogSprite1 styles={styles} onClick={handleClick} />
+        case "dog2":
+            return <DogSprite2 styles={styles} onClick={handleClick} />
         default:
             return <></>
     }
