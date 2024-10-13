@@ -1,0 +1,48 @@
+.floating-tutorial-btn {
+    position: fixed;
+    top: 35px; 
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 0;
+    outline: none;
+    width: 40px; 
+    height: 40px; 
+  }
+  
+  .lightbulb-icon {
+    position: relative;
+    width: 25px;
+    height: 35px; 
+    background-color: #ffeb3b; 
+    border-radius: 50% 50% 40% 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffc107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbulb-icon::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 14px;
+    height: 8px;
+    background-color: #757575;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .lightbulb-icon::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    width: 10px;
+    height: 2px;
+    background-color: orange;
+    border-radius: 1px;
+  }
+  

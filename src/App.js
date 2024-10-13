@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "./components/Sidebar";
 import MidArea from "./components/MidArea";
 import PreviewArea from "./components/PreviewArea";
-
+import TutorialButton from "./components/TutorialButton";
 
 export default function App() {
   return (
@@ -13,7 +13,15 @@ export default function App() {
         </div>
         <div className="w-1/3 h-screen overflow-hidden flex flex-row bg-white border-t border-l border-gray-200 rounded-tl-xl ml-2">
           <PreviewArea />
+          
         </div>
+        <div>
+        <TutorialButton />
+        </div>
+        <div>
+        
+        </div>
+
       </div>
     </div>
   );
